@@ -95,6 +95,12 @@
    * Animation on scroll function and init
    */
   function aosInit() {
+    // Don't initialize AOS on skills page - we use custom animation
+    const skillsPage = document.querySelector('.services-page');
+    if (skillsPage) {
+      return;
+    }
+    
     AOS.init({
       duration: 600,
       easing: 'ease-in-out',
@@ -103,6 +109,29 @@
     });
   }
   window.addEventListener('load', aosInit);
+
+  /**
+   * Custom skills animation for skills page
+   */
+  function initSkillsAnimation() {
+    const skillsPage = document.querySelector('.services-page');
+    if (skillsPage) {
+      const skillItems = document.querySelectorAll('.features-item');
+      skillItems.forEach((item, index) => {
+        // Set initial state
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(20px)';
+        item.style.transition = 'opacity 0.6s ease-in-out, transform 0.6s ease-in-out';
+        
+        // Animate in sequence
+        setTimeout(() => {
+          item.style.opacity = '1';
+          item.style.transform = 'translateY(0)';
+        }, index * 100);
+      });
+    }
+  }
+  window.addEventListener('load', initSkillsAnimation);
 
   /**
    * Init typed.js
