@@ -1,6 +1,4 @@
-Thanks for downloading this template!
+Custom Portfolio Website
 
-Template Name: Personal
-Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+Built with Bootstrap v5.3.3
+Updated: Nov 04 2024
