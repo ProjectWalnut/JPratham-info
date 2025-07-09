@@ -1,3 +1,4 @@
+<!-- FULL FILE CONTENT STARTS HERE -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,14 +29,6 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Personal
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Updated: Nov 04 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="resume-page">
@@ -43,10 +36,7 @@
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1 class="sitename">JPratham.info</h1>
       </a>
 
@@ -61,49 +51,40 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
     </div>
   </header>
 
   <main class="main">
-
-    <!-- Page Title -->
     <div class="page-title" data-aos="fade">
       <div class="heading">
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
-              <h1>Resume</h1>
-              <p class="mb-0"><a href="#" data-bs-toggle="modal" data-bs-target="#resumeModal">Click here to get the
-                  latest version of my resume & more!</a></p>
-            </div>
+                          <div class="col-lg-8">
+                <h1>Resume</h1>
+                <p class="mb-0" style="font-weight: bold; color: var(--accent-color);">📊 For the complete story: impact, systems, metrics & more!</p>
+                <p class="mb-0"><a href="#" data-bs-toggle="modal" data-bs-target="#resumeModal" style="font-weight: bold; color: var(--accent-color); text-decoration: underline;">👉 Click here to get my resume!</a></p>
+              </div>
           </div>
         </div>
       </div>
-    </div><!-- End Page Title -->
+    </div>
 
-    <!-- Resume Modal -->
     <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content" style="background-color: var(--surface-color);">
           <div class="modal-header" style="border-bottom: 1px solid var(--accent-color);">
-            <h5 class="modal-title" id="resumeModalLabel"
-              style="color: var(--heading-color); font-family: var(--heading-font);">Get My Resume</h5>
+            <h5 class="modal-title" id="resumeModalLabel" style="color: var(--heading-color); font-family: var(--heading-font);">Get My Resume</h5>
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <p class="mb-4" style="color: var(--default-color); font-size: 16px;">Please enter your email id to receive
-              my resume directly in your inbox!</p>
+            <p class="mb-4" style="color: var(--default-color); font-size: 16px;">Please enter your email id to receive my resume directly in your inbox!</p>
             <form id="resumeForm" method="POST"
               action="https://script.google.com/macros/s/AKfycbzzsYIXvTr8aJZn2MxV9tQer3LhI-l_rtcSLd4JLk7o6vzfoQVeHNQEZ5Qi9yovI-S2kw/exec"
               target="hidden-iframe">
-
               <div class="mb-4">
-                <input type="email" class="form-control" id="emailInput" name="email"
-                  placeholder="Enter your email address" required
+                <input type="email" class="form-control" id="emailInput" name="email" placeholder="Enter your email address" required
                   style="background-color: var(--background-color); border: 1px solid var(--accent-color); color: var(--default-color); padding: 12px 16px; font-size: 16px;">
-                <div class="invalid-feedback" id="emailError" style="color: #df1529; font-size: 14px; margin-top: 5px;">
-                </div>
+                <div class="invalid-feedback" id="emailError" style="color: #df1529; font-size: 14px; margin-top: 5px;"></div>
               </div>
               <div class="d-grid">
                 <button type="submit" class="btn" id="submitBtn"
@@ -116,8 +97,7 @@
                 </button>
               </div>
             </form>
-            <div id="responseMessage" class="mt-3"
-              style="display: none; padding: 12px; border-radius: 6px; font-weight: 600;"></div>
+            <div id="responseMessage" class="mt-3" style="display: none; padding: 12px; border-radius: 6px; font-weight: 600;"></div>
           </div>
         </div>
       </div>
@@ -128,17 +108,11 @@
         0% {
           transform: rotate(0deg);
         }
-
         100% {
           transform: rotate(360deg);
         }
       }
-
-      .modal-content {
-        border-radius: 12px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-      }
-
+      .modal-content { border-radius: 12px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); }
       .modal-content .form-control:focus,
       .modal-content .form-control:focus-visible,
       .modal-content .form-control:focus-within {
@@ -148,162 +122,106 @@
         box-shadow: none !important;
         outline: none !important;
       }
-
       .modal-content input[type="email"]:focus,
       .modal-content input[type="email"]:focus-visible {
         box-shadow: none !important;
         outline: none !important;
       }
-
-      .modal-content .form-control::placeholder {
-        color: #888;
-      }
-
+      .modal-content .form-control::placeholder { color: #888; }
       .modal-content .btn:hover {
         background-color: color-mix(in srgb, var(--accent-color), transparent 15%);
         transform: translateY(-2px);
         box-shadow: 0 4px 12px rgba(24, 210, 110, 0.3);
       }
-
-      .modal-content .btn:active {
-        transform: translateY(0);
-      }
-
-      .success-message {
-        background-color: #059652;
-        color: #ffffff;
-        border: 1px solid #059652;
-      }
-
-      .error-message {
-        background-color: #df1529;
-        color: #ffffff;
-        border: 1px solid #df1529;
-      }
+      .modal-content .btn:active { transform: translateY(0); }
+      .success-message { background-color: #059652; color: #ffffff; border: 1px solid #059652; }
+      .error-message { background-color: #df1529; color: #ffffff; border: 1px solid #df1529; }
     </style>
 
-    <!-- Resume Section -->
     <section id="resume" class="resume section">
-
       <div class="container">
-
         <div class="row">
 
-          <!-- Left Section -->
+          <!-- Left Column -->
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
 
-            <!-- Education -->
             <h3 class="resume-title">Education</h3>
             <div class="resume-item">
               <h4>Master's of Artificial Intelligence &amp; Computer Science</h4>
               <h5>2024 - 2026</h5>
               <p><em>Yeshiva University, Manhattan, NYC</em></p>
-              <p>Coursework: Machine Learning, Deep Learning, GenAI, LLMs, Data Acquisition and Management, Artificial
-                Intelligence, Neural Networks, Predictive Modeling, NLP</p>
-            </div><!-- Edn Resume Item -->
+              <p>Coursework: Machine Learning, Deep Learning, GenAI, LLMs, Data Acquisition and Management, Artificial Intelligence, Neural Networks, Predictive Modeling, NLP</p>
+            </div>
 
             <div class="resume-item">
               <h4>Bachelor of Information Technology</h4>
               <h5>2017 - 2021</h5>
               <p><em>Pune Institute of Computer Technology, Pune</em></p>
-              <p>Coursework: Advanced Data Structures, Computer Organization and Architecture, Operating Systems,
-                Computer Networks, Software Development, Object Oriented Programming, Theory of Computation</p>
-            </div><!-- Edn Resume Item -->
+              <p>Coursework: Advanced Data Structures, Computer Organization and Architecture, Operating Systems, Computer Networks, Software Development, Object Oriented Programming, Theory of Computation</p>
+            </div>
 
-            <!-- Achievements -->
             <h3 class="resume-title">Achievements</h3>
             <div class="resume-item">
               <ul>
-                <li>Reacted swiftly to resolve a critical production issue that impacted odometer calculations for
-                  45,000+ vehicles due to a subtle bug
-                  in GPS noise filtering logic, causing false distance accumulation. Identified and fixed the root cause
-                  within hours, then engineered
-                  and optimized a high-throughput data correction script to retroactively fix millions of incorrect
-                  odometer entries, all while ensuring live vehicle updates continued seamlessly. Monitored the fix for
-                  a week, scaling database performance and validating corrected data, showcasing resilience, technical
-                  expertise, and ownership in <strong>addressing the largest-scale incident in the company's
-                    history.</strong>
-                </li>
-                <li>Awarded the 'Project Excellence' recognition during the IBM G.R.M. Project for contributions to the
-                  Citizen Information Gathering System, which streamlined internal processes and enhanced response times
-                  for COVID-19 related grievances during UAT testing.</li>
-                <li>Winner of the <strong>Inter-University Manipal Hackathon</strong> for developing a Crop
-                  Recommendation System for Farmers</li>
+                <li>Resolved a critical GPS filtering bug affecting 45,000+ vehicles at Intangles.ai and retroactively corrected millions of odometer entries with zero downtime.</li>
+                <li>Received 'Project Excellence' recognition for impact during IBM G.R.M.’s COVID-19 UAT deployment.</li>
+                <li>Published a research paper on "Motion Blur Detection and Removal in Images" in IJISRT Journal.</li>
+                <li>Finalist (college level) of Smart India Hackathon for developing a farmer-facing crop recommendation engine.</li>
               </ul>
-            </div><!-- Achievements Resume Item -->
+            </div>
 
-            <!-- Certifications -->
             <h3 class="resume-title">Certifications</h3>
             <div class="resume-item">
               <ul>
-                <li>Certified in <strong>Google Cloud Professional Data Engineer</strong> (2023).</li>
-                <li>Certified in <strong>Deep Learning Specialization</strong> by Andrew Ng (Coursera, 2022).</li>
-                <li>Certified in <strong>Microsoft Azure Fundamentals (AZ-900)</strong> (2021).</li>
-                <li>GitLab Certified CI/CD Associate (2021).</li>
-
+                <li><strong>Quantum Computing</strong> – Centre for Development of Advanced Computing & Indian Institute of Technology, Roorkee (2025)</li>
+                <li><strong>Google Cloud Professional Data Engineer</strong> (2023)</li>
+                <li><strong>Deep Learning Specialization</strong> – Andrew Ng (2022)</li>
+                <li><strong>Microsoft Azure Fundamentals (AZ-900)</strong> (2021)</li>
+                <li>GitLab Certified CI/CD Associate (2021)</li>
               </ul>
-            </div><!-- Certifications Resume Item -->
-
+            </div>
           </div>
 
-          <!-- Right Section -->
+          <!-- Right Column -->
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Intangles.ai, Pune, IN</h4>
-              <h5>2022 - 2024</h5>
-              <p><em>Senior Software Engineer</em></p>
-              <ul>
-                <li>As part of core Product Engineering team, I worked on backend engineering for vehicle performance &
-                  EV features,
-                  building microservices & distributed systems that process over 13+ billion data points daily.</li>
-                <li>Revamped 'Fleet performance reports' backend pipeline, saving 17500 USD annually, by adopting
-                  Message Queuing
-                  architecture & eliminating RPC server dependency.</li>
-                <li>Co-developed 'Pytangles' SDK offering a unified abstraction layer for diverse relational &
-                  non-relational database
-                  access layers (incl. MongoDB, TimescaleDB, ScyllaDB). This SDK streamlines query generation &
-                  facilitates
-                  faster development for different database querying structures.</li>
-                <li>Engineered Simple Moving Avg. algo to reduce noise in fix-3 GPS data, achieving 96% reduction below
-                  5km/h.</li>
-                <li>Developed backend pipeline for Intangles' 'ChargeMate,' a charging station recommendation feature
-                  for EVs,
-                  integrating Python ML models with NodeJS data APIs. Used by ˜10,800 vehicles daily.</li>
-                <li>Created a unit testing framework for data APIs using Mocha & co-developed an integration testing
-                  framework
-                  with Kubernetes & CircleCI. This setup detects issues before deployment, reducing backend bug reports
-                  by 60%.</li>
-                <li>Designed technical design documents & led code reviews, ensuring best practices & architectural
-                  standards.</li>
-                <li>Initiated "Engineering Weekly" meetups for the dev team to showcase achievements and foster
-                  discussions.</li>
-              </ul>
-            </div><!-- Professional Experience Item -->
+            <!-- <p><em>(Full project details, system architectures, and impact metrics are shared in the PDF version — <strong>Click above to get my resume</strong>.)</em></p> -->
 
             <div class="resume-item">
-              <h4>UBS Group AG, Pune, IN (U.K. Remote team)</h4>
-              <h5>2021 - 2022</h5>
-              <p><em>Software Engineer</em></p>
+              <h4>Research Assistant</h4>
+              <h5>May 2025 – Present</h5>
+              <p><em>YU Innovation Labs – New York, NY</em></p>
               <ul>
-                <li>Created an automation plugin for GitLab-Octane integration, used by 1600+ developers.</li>
-                <li>Built CI/CD pipelines for automated testing on Azure VMs and created a monitoring dashboard for
-                  real-time
-                  server insights and test management, supporting 2000+ UBS developers.</li>
-                <li>Built an end-to-end automated tool for cloud migration, optimized project migration time from 4 days
-                  to 8 hours.</li>
+                <li>Designing AI-powered systems for Evidence Synthesis under a Google Cloud–funded grant led by Prof. Ramesh Natarajan.</li>
+                <li>Working on LLM benchmarking, citation graph–based retrieval, and deep-research automation spanning literature and non-traditional sources.</li>
               </ul>
-            </div><!-- Professional Experience Item -->
+            </div>
 
+            <div class="resume-item">
+              <h4>Software Engineer</h4>
+              <h5>Dec 2022 – Jul 2024</h5>
+              <p><em>Intangles.ai – Pune, India</em></p>
+              <ul>
+                <li>Built real-time backend systems and data pipelines powering EV features, diagnostics, and fleet intelligence, operating at a company-wide scale comparable to Tesla.</li>
+                <li>Led ingestion architecture, ML-integrated services, and observability improvements across critical microservices.</li>
+                <li>Initiated test automation pipelines and collaborated directly with business teams to ship high-impact, production-grade features.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Software Engineer</h4>
+              <h5>Jul 2021 – Aug 2022</h5>
+              <p><em>UBS Group AG – Pune, India (UK Remote Team)</em></p>
+              <ul>
+                <li>Worked on internal DevOps tooling, automated cloud migrations, and real-time monitoring stacks.</li>
+                <li>Enabled 2,000+ UBS developers globally through CI/CD pipelines, test infra, and analytics dashboards integrated with GitLab and Azure.</li>
+              </ul>
+            </div>
           </div>
 
         </div>
-
       </div>
-
-    </section><!-- /Resume Section -->
-
-
+    </section>
   </main>
 
   <footer id="footer" class="footer dark-background">
@@ -312,24 +230,17 @@
         <span>Copyright</span> <strong class="px-1 sitename">JPratham.info</strong>
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
         Designed by <a href="https://bootstrapmade.com/">Me! With great Passion!</a>
       </div>
     </div>
-    </div>
   </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
-  <!-- Preloader -->
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -340,11 +251,8 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
-  <!-- Resume Modal JavaScript -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const resumeForm = document.getElementById('resumeForm');
@@ -354,8 +262,6 @@
       const btnLoader = document.getElementById('btnLoader');
       const responseMessage = document.getElementById('responseMessage');
       const emailError = document.getElementById('emailError');
-
-      // Google Apps Script URL
       const GOOGLE_APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzzsYIXvTr8aJZn2MxV9tQer3LhI-l_rtcSLd4JLk7o6vzfoQVeHNQEZ5Qi9yovI-S2kw/exec';
 
       function showLoading() {
@@ -385,55 +291,31 @@
 
       resumeForm.addEventListener('submit', async function (e) {
         e.preventDefault();
-
         const email = emailInput.value.trim();
-
-        // Basic email validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!email) {
-          showEmailError('Please enter your email address');
-          return;
-        }
-
-        if (!emailRegex.test(email)) {
-          showEmailError('Please enter a valid email address');
-          return;
-        }
-
+        if (!email) return showEmailError('Please enter your email address');
+        if (!emailRegex.test(email)) return showEmailError('Please enter a valid email address');
         showLoading();
-
         try {
-          // Use form submission approach that works reliably
-          // Create a form and submit it to the Google Apps Script
           const form = document.createElement('form');
           form.method = 'POST';
           form.action = GOOGLE_APPS_SCRIPT_URL;
           form.target = 'hidden-iframe';
-
           const hiddenInput = document.createElement('input');
           hiddenInput.type = 'hidden';
           hiddenInput.name = 'email';
           hiddenInput.value = email;
           form.appendChild(hiddenInput);
-
           document.body.appendChild(form);
-
-          // Create hidden iframe (but don't try to read from it to avoid 403 errors)
           let iframe = document.getElementById('hidden-iframe');
           if (!iframe) {
             iframe = document.createElement('iframe');
             iframe.id = 'hidden-iframe';
             iframe.name = 'hidden-iframe';
             iframe.style.display = 'none';
-            // Remove sandbox to allow the form to submit properly
             document.body.appendChild(iframe);
           }
-
-          // Submit form
           form.submit();
-
-          // Since we know the script works (emails and sheet updates), show success
-          // This avoids the 403 errors while still providing good UX
           setTimeout(() => {
             hideLoading();
             showMessage('Thank you! You should receive resume in email shortly', true);
@@ -441,13 +323,10 @@
               resumeForm.reset();
               responseMessage.style.display = 'none';
             }, 3000);
-
-            // Clean up
             if (document.body.contains(form)) {
               document.body.removeChild(form);
             }
           }, 1500);
-
         } catch (error) {
           hideLoading();
           showMessage('Something went wrong. Please try again.', false);
@@ -455,14 +334,11 @@
         }
       });
 
-      // Clear error when user starts typing
       emailInput.addEventListener('input', function () {
         emailError.style.display = 'none';
         responseMessage.style.display = 'none';
       });
     });
   </script>
-
 </body>
-
 </html>

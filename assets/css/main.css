@@ -726,6 +726,23 @@ section,
   border-bottom: 2px solid var(--accent-color);
 }
 
+.hero .subtitle {
+  font-size: 18px;
+  margin: 15px 0 0 0;
+  max-width: 600px;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+.hero .navigation-guide {
+  font-size: 14px;
+  margin: 15px 0 0 0;
+  max-width: 500px;
+  line-height: 1.5;
+  opacity: 0.7;
+  font-style: italic;
+}
+
 .hero .social-links {
   margin-top: 25px;
 }
@@ -760,6 +777,16 @@ section,
 
   .hero p {
     font-size: 20px;
+  }
+
+  .hero .subtitle {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  .hero .navigation-guide {
+    font-size: 13px;
+    max-width: 100%;
   }
 }
 
@@ -836,6 +863,13 @@ section,
   margin: 0;
   font-family: var(--heading-font);
   font-size: 16px;
+}
+
+.stats-number {
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1;
 }
 
 /*--------------------------------------------------------------
@@ -1512,4 +1546,52 @@ section,
   margin-top: -50px;
   padding-top: 50px;
   background-image: radial-gradient(circle at center, #010E1B 0%, #f8f9fa 200%);
+}
+
+/* Movie Quote Card Styles */
+.movie-quote-card {
+  background: #232323;
+  border-radius: 12px;
+  color: #f1f1f1;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  border-left: 4px solid #4e8cff;
+  max-width: 420px;
+  font-size: 0.68rem;
+  padding: 0.3rem 0.5rem !important;
+}
+.movie-title {
+  font-size: 0.72rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.movie-quote {
+  font-size: 0.75rem;
+  font-style: italic;
+  border-left: 4px solid #4e8cff;
+  padding-left: 0.3em;
+  margin: 0.3em 0;
+}
+.quote-attribution {
+  font-size: 0.68rem;
+}
+.quotes-subtitle {
+  font-size: 0.78rem;
+  color: #b0b0b0;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.5em;
+  font-style: italic;
+}
+.watch-link {
+  color: #4e8cff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+.watch-link:hover {
+  text-decoration: underline;
+}
+.tv-emoji {
+  margin-right: 0.3em;
 }
