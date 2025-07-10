@@ -141,9 +141,9 @@
     new Typed('.typed', {
       strings: typed_strings,
       loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
+      typeSpeed: 25,
+      backSpeed: 25,
+      backDelay: 1500
     });
   }
 
@@ -227,5 +227,55 @@
     });
 
   });
+
+  /**
+   * Page visibility API - Change title when user switches tabs
+   */
+  let originalTitle = document.title;
+  let hiddenTitle = "Come back!";
+  let originalFavicon = document.querySelector('link[rel="icon"]')?.href;
+  let originalAppleTouchIcon = document.querySelector('link[rel="apple-touch-icon"]')?.href;
+  
+  function handleVisibilityChange() {
+    if (document.hidden) {
+      document.title = hiddenTitle;
+      // Change favicon and apple touch icon to 🥹 emoji
+      const favicon = document.querySelector('link[rel="icon"]');
+      const appleTouchIcon = document.querySelector('link[rel="apple-touch-icon"]');
+      if (favicon) favicon.href = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y="95" font-size="100">🥹</text></svg>';
+      if (appleTouchIcon) appleTouchIcon.href = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y="95" font-size="100">🥹</text></svg>';
+    } else {
+      document.title = originalTitle;
+      // Restore original favicon and apple touch icon
+      const favicon = document.querySelector('link[rel="icon"]');
+      const appleTouchIcon = document.querySelector('link[rel="apple-touch-icon"]');
+      if (favicon && originalFavicon) favicon.href = originalFavicon;
+      if (appleTouchIcon && originalAppleTouchIcon) appleTouchIcon.href = originalAppleTouchIcon;
+    }
+  }
+  
+  // Listen for visibility change events
+  document.addEventListener('visibilitychange', handleVisibilityChange);
+  
+  // Also handle when the page loses focus (alternative method)
+  window.addEventListener('blur', function() {
+    document.title = hiddenTitle;
+    // Change favicon and apple touch icon to 🥹 emoji
+    const favicon = document.querySelector('link[rel="icon"]');
+    const appleTouchIcon = document.querySelector('link[rel="apple-touch-icon"]');
+    if (favicon) favicon.href = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y="95" font-size="100">🥹</text></svg>';
+    if (appleTouchIcon) appleTouchIcon.href = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y="95" font-size="100">🥹</text></svg>';
+  });
+  
+  window.addEventListener('focus', function() {
+    document.title = originalTitle;
+    // Restore original favicon and apple touch icon
+    const favicon = document.querySelector('link[rel="icon"]');
+    const appleTouchIcon = document.querySelector('link[rel="apple-touch-icon"]');
+    if (favicon && originalFavicon) favicon.href = originalFavicon;
+    if (appleTouchIcon && originalAppleTouchIcon) appleTouchIcon.href = originalAppleTouchIcon;
+  });
+
+
 
 })();
